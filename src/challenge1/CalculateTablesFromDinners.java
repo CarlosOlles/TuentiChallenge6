@@ -14,7 +14,7 @@ public class CalculateTablesFromDinners {
 				numberOfTables = 1;
 			} else {
 				numberOfTables = ((numberOfDinnersInt - 4) / 2) + 1;
-				if (numberOfDinnersInt % 4 == 1 || numberOfDinnersInt % 4 == 3) {
+				if (numberOfDinnersInt % 2 != 0) {
 					numberOfTables++;
 				}
 			}
